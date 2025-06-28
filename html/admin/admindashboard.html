@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Deliverithm Admin</title>
+  <link rel="stylesheet" href="/css/admin/admindashboard.css">
+</head>
+<body>
+  <div class="navbar">
+    <img src="/img/logo.png" alt="Deliverithm Logo" class="logo-img">
+    <div class="nav-links">
+      <a href="#" class="active">Dashboard</a>
+      <a href="#">Manage Packages</a>
+      <a href="#">View Assigned</a>
+      <a href="#">Package Status</a>
+    </div>
+  </div>
+
+  <div class="dashboard-container">
+    <!-- MAP VIEW -->
+    <div class="map-section">
+      <iframe
+        width="100%"
+        height="650"
+        style="border:0; border-radius: 15px;"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Manila,Philippines">
+      </iframe>
+      <h2>Map View</h2>
+    </div>
+
+    <!-- DATA BOXES -->
+    <div class="info-grid">
+      <div class="info-box">
+        <div class="flex-row">
+          <div>
+            <h3>Total Packages:</h3>
+            <p></p>
+          </div>
+          <div>
+            <h3>Pending:</h3>
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box center-box">
+        <h3>Truck Capacity:</h3>
+        <p></p>
+      </div>
+
+      <div class="info-box">
+        <div class="flex-row">
+          <div>
+            <h3>Active Personnel:</h3>
+            <p></p>
+          </div>
+          <div>
+            <h3>Route:</h3>
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    Precision Routing, Perfect Timing.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+/* === RESET AND LAYOUT === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-image: url('/img/bg.png');
+  background-size: cover;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+/* === NAVBAR === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00a6a6;
+  padding: 12px 24px;
+}
+
+.logo-img {
+  height: 100px;
+}
+
+.nav-links a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #007777;
+}
+
+.nav-links a.active {
+  background-color: #004c4c;
+}
+
+/* === MAIN CONTENT === */
+.content-container {
+  background-color: #e1ffff;
+  margin: 40px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 20px;
+  color: black;
+  flex: 1;
+  text-align: center;
+}
+
+.content-container h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* === FLEX WRAPPER FOR MAP AND TABLE === */
+.route-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* === GOOGLE MAPS === */
+.map-box {
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* === ROUTE TABLE === */
+.route-table {
+  width: 400px;
+  border-collapse: collapse;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.route-table th,
+.route-table td {
+  border: 2px solid #00a6a6;
+  padding: 12px;
+  text-align: center;
+}
+
+.route-table th {
+  background-color: #00a6a6;
+  color: white;
+}
+
+/* === FOOTER === */
+.footer {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  background-color: #007777;
+  padding: 12px;
+  font-size: 16px;
+}

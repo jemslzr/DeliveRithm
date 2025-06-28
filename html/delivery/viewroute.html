@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>View Route - Deliverithm Driver</title>
+  <link rel="stylesheet" href="/css/delivery/viewroute.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" defer></script>
+  <script defer>
+    function initMap() {
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 10,
+        center: { lat: 14.5995, lng: 120.9842 } // Manila
+      });
+
+      const route = [
+        { lat: 14.5995, lng: 120.9842 }, // Manila
+        { lat: 14.1735, lng: 121.2433 }  // Laguna
+      ];
+
+      new google.maps.Polyline({
+        path: route,
+        geodesic: true,
+        strokeColor: "#00a6a6",
+        strokeOpacity: 1.0,
+        strokeWeight: 4,
+        map: map
+      });
+
+      route.forEach(coord => {
+        new google.maps.Marker({ position: coord, map: map });
+      });
+    }
+
+    window.addEventListener("load", initMap);
+  </script>
+</head>
+<body>
+  <div class="navbar">
+    <img src="/img/logo.png" alt="Deliverithm Logo" class="logo-img">
+    <div class="nav-links">
+      <a href="#">Dashboard</a>
+      <a href="#" class="active">View Route</a>
+      <a href="#">Assigned Packages</a>
+    </div>
+  </div>
+
+  <div class="content-container">
+    <h2>Current Route</h2>
+    <div class="route-wrapper">
+      <div id="map" class="map-box"></div>
+      <table class="route-table">
+        <thead>
+          <tr>
+            <th>Package ID</th>
+            <th>Route</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>DLVRTHM001</td>
+            <td>MANILA - LAGUNA</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer class="footer">
+    Precision Routing, Perfect Timing.
+  </footer>
+</body>
+</html>

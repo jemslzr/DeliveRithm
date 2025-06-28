@@ -1,0 +1,115 @@
+/* === RESET AND BASE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-image: url('/img/bg.png');
+  background-size: cover;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+/* === NAVBAR === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00a6a6;
+  padding: 12px 24px;
+}
+
+.logo-img {
+  height: 100px;
+}
+
+.nav-links a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #007777;
+}
+
+.nav-links a.active {
+  background-color: #004c4c;
+}
+
+/* === CONTENT === */
+.content-container {
+  background-color: #e1ffff;
+  margin: 40px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 20px;
+  color: black;
+  flex: 1;
+}
+
+/* === TABLE === */
+.package-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+.package-table th,
+.package-table td {
+  border: 2px solid #00a6a6;
+  padding: 12px;
+  text-align: left;
+}
+
+/* === ASSIGN PERSONNEL === */
+.assign-section {
+  border-top: 2px solid black;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.assign-section select {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.btn-process {
+  background-color: #007777;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* === FOOTER === */
+.footer {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  background-color: #007777;
+  padding: 12px;
+  font-size: 16px;
+}

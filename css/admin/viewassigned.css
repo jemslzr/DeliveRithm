@@ -1,0 +1,93 @@
+/* === RESET AND LAYOUT === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-image: url('/img/bg.png');
+  background-size: cover;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+/* === NAVBAR === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00a6a6;
+  padding: 12px 24px;
+}
+
+.logo-img {
+  height: 100px;
+}
+
+.nav-links a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #007777;
+}
+
+.nav-links a.active {
+  background-color: #004c4c;
+}
+
+/* === MAIN CONTENT === */
+.content-container {
+  background-color: #e1ffff;
+  margin: 40px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 20px;
+  color: black;
+  flex: 1; /* take up remaining space */
+  text-align: center;
+}
+
+.content-container h2 {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* === TABLE === */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  color: black;
+}
+
+.history-table th,
+.history-table td {
+  border: 2px solid #00a6a6;
+  padding: 12px;
+  text-align: left;
+}
+
+/* === FOOTER === */
+.footer {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  background-color: #007777;
+  padding: 12px;
+  font-size: 16px;
+}
