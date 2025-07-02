@@ -1,0 +1,118 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-image: url('/img/bg.png');
+  background-size: cover;
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00a6a6;
+  padding: 12px 24px;
+}
+
+.logo-img {
+  height: 100px;
+}
+
+.nav-links a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #007777;
+}
+
+.nav-links a.active {
+  background-color: #004c4c;
+}
+
+/* DASHBOARD */
+.dashboard-container {
+  padding: 40px 5%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  flex: 1;
+}
+
+/* MAP SECTION */
+.map-section {
+  background-color: #e1ffff;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.map-section h2 {
+  margin-top: 15px;
+  font-size: 20px;
+  color: black;
+}
+
+/* INFO GRID */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.info-box {
+  background-color: #e1ffff;
+  border-radius: 15px;
+  padding: 20px;
+  color: black;
+  gap: 20px;
+  font-size: 30px;
+}
+
+/* FLEX PAIR (side-by-side fields) */
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.flex-row div {
+  flex: 1;
+}
+
+/* CENTER BOX */
+.center-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #007777;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  font-style: italic;
+  font-weight: bold;
+}
